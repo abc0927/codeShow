@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+<div id="test">
+    <div class="title">标题栏</div>
+    <div class="content-wrapper">
+        <div class="left-sidebar">侧边栏</div>
+        <div class="container">
+            <div class="left-wrapper">
+                <!--代码展示切换按钮-->
+                <ul class="code-types">
+                    <li class="code-type active">
+                        <a id="html-link" data-href="#tabHtml" class="active">HTML</a>
+                    </li>
+                    <li class="code-type">
+                        <a id="css-link" data-href="#tabCss" class="">CSS</a>
+                    </li>
+                    <li class="code-type">
+                        <a id="js-link" data-href="#tabJs" class="">JS</a>
+                    </li>
+                    <li class="code-type">
+                        <a id="result-link" data-href="#tabJsUse" class="" >使用方法</a>
+                    </li>
+                </ul>
+                <!--代码展示区域栏-->
+                <div class="content">
+                    <div id="tabHtml" class="tab">
+                        <h2>HTML</h2>
+                        <pre >代码内容</pre>
+                    </div>
+                    <div id="tabCss" class="tab hidden">
+                        <h2>CSS</h2>
+                        <pre></pre>
+                    </div>
+                    <div id="tabJs" class="tab hidden">
+                        <h2>JS</h2>
+                        <pre></pre>
+                    </div>
+                    <div id="tabJsUse" class="tab hidden">
+                        <h2>使用方法</h2>
+                        <pre></pre>
+                    </div>
+                </div>
+                <div id="buttonControl">
+                    <a class="btn maxCode">最大化</a>
+                </div>
+            </div>
+            <!--代码演示区域-->
+            <div class="right-wrapper">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script src="js/router.js"></script>
+<script src="js/prism.js"></script>
+</body>
+</html>
